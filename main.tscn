@@ -1,9 +1,10 @@
-[gd_scene load_steps=6 format=3 uid="uid://bgonf7vvwxost"]
+[gd_scene load_steps=7 format=3 uid="uid://bgonf7vvwxost"]
 
 [ext_resource type="Script" path="res://main.gd" id="1_np2ea"]
-[ext_resource type="PackedScene" uid="uid://bxh5hj06nnn6o" path="res://player1.tscn" id="2_1xvsb"]
+[ext_resource type="PackedScene" uid="uid://bxh5hj06nnn6o" path="res://player1paddleV.tscn" id="2_1xvsb"]
 [ext_resource type="PackedScene" uid="uid://3x4s2gcogrvf" path="res://hud.tscn" id="2_g051u"]
 [ext_resource type="PackedScene" uid="uid://be3ouu4t0b87s" path="res://player2.tscn" id="3_eqwh7"]
+[ext_resource type="PackedScene" uid="uid://l4mtx1ppnme5" path="res://player1paddleH.tscn" id="4_1w71h"]
 [ext_resource type="PackedScene" uid="uid://dd28q4107lsgh" path="res://ball.tscn" id="5_0vuxy"]
 
 [node name="Game" type="Node"]
@@ -19,14 +20,17 @@ color = Color(0, 0, 0, 1)
 
 [node name="HUD" parent="." instance=ExtResource("2_g051u")]
 
-[node name="Player1" parent="." instance=ExtResource("2_1xvsb")]
+[node name="Player1PaddleV" parent="." instance=ExtResource("2_1xvsb")]
 position = Vector2(32, 60)
 
+[node name="Player1PaddleH" parent="." instance=ExtResource("4_1w71h")]
+position = Vector2(79, 224)
+
 [node name="Player2" parent="." instance=ExtResource("3_eqwh7")]
-position = Vector2(398, 176)
+position = Vector2(224, 176)
 
 [node name="Ball" parent="." instance=ExtResource("5_0vuxy")]
-position = Vector2(217, 116)
+position = Vector2(126, 111)
 
 [connection signal="player_won" from="HUD" to="." method="player_won"]
 [connection signal="player_won" from="HUD" to="HUD" method="_on_player_won"]

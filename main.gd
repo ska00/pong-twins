@@ -1,13 +1,14 @@
 extends Node
 
 var screen_size
-var game_state = "intro"
+var game_state = "start"
 var winner
 
 
 func _ready() -> void:
-	$Player1.position = Vector2(32, 60)
-	$Player2.position = Vector2(432 - 32, 176)
+	$Player1PaddleV.position = Vector2(16, 60)
+	$Player1PaddleH.position = Vector2(40, 243 - 16)
+	$Player2.position = Vector2(243 - 16, 176)
 	$HUD/Player1Score.position.x -= 32
 	$HUD/Player2Score.position.x += 32
 

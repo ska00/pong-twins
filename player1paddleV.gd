@@ -12,13 +12,12 @@ func _ready():
 # Out _update function
 func _process(delta):
 	var velocity = Vector2.ZERO
-	if Input.is_action_pressed("down"):
+	if Input.is_action_pressed("player1_down"):
 		velocity.y += SPEED
-	elif Input.is_action_pressed("up"):
+	elif Input.is_action_pressed("player1_up"):
 		velocity.y -= SPEED
 	
 	position += velocity * delta
 	position = position.clamp(player_size / 2, screen_size - player_size / 2)
-	
-	# Check for collisions
+
 	
