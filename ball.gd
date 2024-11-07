@@ -52,6 +52,7 @@ func _on_visible_on_screen_notifier_2d_screen_exited():
 		reset(screen_size / 2 - Vector2(32, 0))
 
 func _on_area_entered(area: Area2D) -> void:
+	print(area.ID)
 	velocity.x = -velocity.x * 1.05
 	if velocity.y < 0:
 		velocity.y = -randi_range(10, 150)

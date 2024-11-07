@@ -7,3 +7,4 @@ res://player1paddleV.gd
 res://player2.tscn
 res://player2.gd
 res://player1paddleH.gd
+res://ball.gd
