@@ -8,14 +8,17 @@ var player2_score = 0
 
 const WINNING_SCORE = 10
 const INSTRUCTIONS = [
-	"Player 1 moves with the W and S keys",
-	"Player 2 moves with the up and down keys",
-	"Whoever scores 10 first wins",
-	"Press Enter to start the game"
+	"Each player has two paddles to defend two edges",
+	"Player 1 moves with the WASD keys",
+	"Player 2 moves with the up. down, left, and right keys",
+	"Try moving the paddles!",
+	"Whoever scores 10 first wins. Press Enter to start",
 ]
 
 func _ready():
 	$Message.text = "Welcome to a game of Pong!"
+	
+	
 
 func _process(delta):
 	$FPSCounter.text = "FPS: " + str(Engine.get_frames_per_second())

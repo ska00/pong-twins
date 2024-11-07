@@ -8,9 +8,12 @@ var winner
 func _ready() -> void:
 	$Player1PaddleV.position = Vector2(16, 60)
 	$Player1PaddleH.position = Vector2(40, 243 - 16)
-	$Player2.position = Vector2(243 - 16, 176)
-	$HUD/Player1Score.position.x -= 32
-	$HUD/Player2Score.position.x += 32
+	$Player2PaddleV.position = Vector2(243 - 16, 176)
+	$Player2PaddleH.position = Vector2(243 - 16, 16)
+	
+	
+	$HUD/Player1Score.position.x -= 12
+	$HUD/Player2Score.position.x += 12
 
 
 func _process(delta: float) -> void:

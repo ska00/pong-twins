@@ -1,10 +1,13 @@
 res://main.tscn
+res://player1paddleH.gd
 res://hud.tscn
-res://main.gd
 res://player1paddleH.tscn
 res://player1paddleV.tscn
-res://player1paddleV.gd
 res://player2.tscn
-res://player2.gd
-res://player1paddleH.gd
+res://main.gd
+res://player2paddleV.tscn
+res://player2paddleH.tscn
+res://player2paddleH.gd
 res://ball.gd
+res://hud.gd
+res://path_lines.gd
