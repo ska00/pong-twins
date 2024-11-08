@@ -1,0 +1,8 @@
+res://ball.tscn::9803325db106635efc80b84e65307b20::1731016609::res://.godot/exported/133200997/export-f46c71a9b7f0892a5bf2bd9cf0943875-ball.scn
+res://hud.tscn::e3f0a77c5551daea77b3eb0941768711::1731027227::res://.godot/exported/133200997/export-f4cf891e5f7a93b93d9b27cfb8401ccb-hud.scn
+res://main.tscn::233f423ffe3fa1e57f955c7b63c3ceee::1731027329::res://.godot/exported/133200997/export-3070c538c03ee49b7677ff960a3f5195-main.scn
+res://player1paddleH.tscn::4b46c59eb30c9fe9f71e1d72252ebe7f::1731027227::res://.godot/exported/133200997/export-d499c55fd837507e25db506f5ff94537-player1paddleH.scn
+res://player1paddleV.tscn::c7ab315a2169b8f3102694208c1485f6::1731027227::res://.godot/exported/133200997/export-a0be1038452207b14adbadd3844a298c-player1paddleV.scn
+res://player2paddleH.tscn::10acd5292a9dff04f8023fe29d387923::1731027228::res://.godot/exported/133200997/export-9f543d6071cb7ef855dd46394de82220-player2paddleH.scn
+res://player2paddleV.tscn::75970a9951d072fd02a5f8b772c513a3::1731027228::res://.godot/exported/133200997/export-7440dfc9a57287e61fe955f985870a1d-player2paddleV.scn
+res://default_bus_layout.tres::6a9eb0f82eb3553beb01ce95e1cce538::1731022628::res://.godot/exported/133200997/export-19246414aa9fb561ced4b8dce477acec-default_bus_layout.res

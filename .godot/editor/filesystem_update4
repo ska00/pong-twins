@@ -11,3 +11,6 @@ res://player2paddleH.gd
 res://ball.gd
 res://hud.gd
 res://path_lines.gd
+res://default_bus_layout.tres
+res://player1paddleV.gd
+res://player2paddleV.gd

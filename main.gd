@@ -1,7 +1,7 @@
 extends Node
 
 var screen_size
-var game_state = "start"
+var game_state = "intro"
 var winner
 
 
@@ -45,6 +45,10 @@ func _process(delta: float) -> void:
 
 
 func scored(_winner: String):
+	if winner == "Player1":
+		$Player2Lose.play()
+	else:
+		$Player1Lose.play()
 	winner = _winner
 	$HUD.print_serve(winner)
 	game_state = "serve"
@@ -52,5 +56,6 @@ func scored(_winner: String):
 
 func player_won(winner):
 	game_state = "done"
+	$WinningSound.play()
 	$Ball.hide()
 	

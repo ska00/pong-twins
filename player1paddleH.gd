@@ -2,6 +2,7 @@ extends Area2D
 
 const SPEED = 200.0
 const ID = "H"
+const PLAYER = 1
 var screen_size
 var player_size
 

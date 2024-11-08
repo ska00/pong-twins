@@ -1,4 +1,4 @@
-[gd_scene load_steps=10 format=3 uid="uid://bgonf7vvwxost"]
+[gd_scene load_steps=15 format=3 uid="uid://bgonf7vvwxost"]
 
 [ext_resource type="Script" path="res://main.gd" id="1_np2ea"]
 [ext_resource type="PackedScene" uid="uid://bxh5hj06nnn6o" path="res://player1paddleV.tscn" id="2_1xvsb"]
@@ -8,6 +8,11 @@
 [ext_resource type="PackedScene" uid="uid://dd28q4107lsgh" path="res://ball.tscn" id="5_0vuxy"]
 [ext_resource type="PackedScene" uid="uid://cnkv65m5rvoow" path="res://player2paddleH.tscn" id="6_a1fpn"]
 [ext_resource type="Script" path="res://path_lines.gd" id="8_b3waq"]
+[ext_resource type="AudioStream" uid="uid://yaml2luu2cl6" path="res://Sounds/player1lose.wav" id="10_5sud7"]
+[ext_resource type="AudioStream" uid="uid://b0f8u2r3hfl7e" path="res://Sounds/player1hit.wav" id="10_mebam"]
+[ext_resource type="AudioStream" uid="uid://crsgul01uq83k" path="res://Sounds/player2hit.wav" id="11_f0x2i"]
+[ext_resource type="AudioStream" uid="uid://cwfc0re7do0kv" path="res://Sounds/player2lose.wav" id="12_qmbrl"]
+[ext_resource type="AudioStream" uid="uid://u4cxjqa13sya" path="res://Sounds/winning.wav" id="13_xvvvp"]
 
 [sub_resource type="SystemFont" id="SystemFont_1x504"]
 font_names = PackedStringArray("M42_FLIGHT 721")
@@ -95,6 +100,27 @@ position = Vector2(182, 18)
 
 [node name="Ball" parent="." instance=ExtResource("5_0vuxy")]
 position = Vector2(126, 111)
+
+[node name="Player2Hit" type="AudioStreamPlayer2D" parent="Ball"]
+position = Vector2(-126, -111)
+stream = ExtResource("11_f0x2i")
+bus = &"Right"
+
+[node name="Player1Hit" type="AudioStreamPlayer2D" parent="Ball"]
+position = Vector2(-126, -111)
+stream = ExtResource("10_mebam")
+bus = &"Left"
+
+[node name="Player1Lose" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource("10_5sud7")
+bus = &"Left"
+
+[node name="Player2Lose" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource("12_qmbrl")
+bus = &"Right"
+
+[node name="WinningSound" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("13_xvvvp")
 
 [connection signal="pressed" from="ShowPathsButton" to="PaddlePathsDrawer" method="_on_show_paths_button_pressed"]
 [connection signal="player_won" from="HUD" to="." method="player_won"]

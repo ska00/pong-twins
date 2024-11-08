@@ -1,0 +1,32 @@
+[gd_resource type="AudioBusLayout" load_steps=4 format=3 uid="uid://dniv5b0r85sbr"]
+
+[sub_resource type="AudioEffectPanner" id="AudioEffectPanner_72g7d"]
+resource_name = "Panner"
+pan = 1.0
+
+[sub_resource type="AudioEffectDelay" id="AudioEffectDelay_fiyhl"]
+resource_name = "Delay"
+
+[sub_resource type="AudioEffectPanner" id="AudioEffectPanner_id4h0"]
+resource_name = "Panner"
+pan = -1.0
+
+[resource]
+bus/1/name = &"Right"
+bus/1/solo = false
+bus/1/mute = false
+bus/1/bypass_fx = false
+bus/1/volume_db = 0.0
+bus/1/send = &"Master"
+bus/1/effect/0/effect = SubResource("AudioEffectPanner_72g7d")
+bus/1/effect/0/enabled = true
+bus/1/effect/1/effect = SubResource("AudioEffectDelay_fiyhl")
+bus/1/effect/1/enabled = false
+bus/2/name = &"Left"
+bus/2/solo = false
+bus/2/mute = false
+bus/2/bypass_fx = false
+bus/2/volume_db = 0.0
+bus/2/send = &"Master"
+bus/2/effect/0/effect = SubResource("AudioEffectPanner_id4h0")
+bus/2/effect/0/enabled = true
