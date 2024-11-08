@@ -3,6 +3,7 @@
 [ext_resource type="Script" path="res://main.gd" id="1_np2ea"]
 [ext_resource type="PackedScene" uid="uid://bxh5hj06nnn6o" path="res://player1paddleV.tscn" id="2_1xvsb"]
 [ext_resource type="PackedScene" uid="uid://3x4s2gcogrvf" path="res://hud.tscn" id="2_g051u"]
+[ext_resource type="FontFile" uid="uid://ja7wxn47gv8h" path="res://kongtext.ttf" id="2_pl5xb"]
 [ext_resource type="PackedScene" uid="uid://be3ouu4t0b87s" path="res://player2paddleV.tscn" id="3_eqwh7"]
 [ext_resource type="PackedScene" uid="uid://l4mtx1ppnme5" path="res://player1paddleH.tscn" id="4_1w71h"]
 [ext_resource type="PackedScene" uid="uid://dd28q4107lsgh" path="res://ball.tscn" id="5_0vuxy"]
@@ -13,9 +14,6 @@
 [ext_resource type="AudioStream" uid="uid://crsgul01uq83k" path="res://Sounds/player2hit.wav" id="11_f0x2i"]
 [ext_resource type="AudioStream" uid="uid://cwfc0re7do0kv" path="res://Sounds/player2lose.wav" id="12_qmbrl"]
 [ext_resource type="AudioStream" uid="uid://u4cxjqa13sya" path="res://Sounds/winning.wav" id="13_xvvvp"]
-
-[sub_resource type="SystemFont" id="SystemFont_1x504"]
-font_names = PackedStringArray("M42_FLIGHT 721")
 
 [node name="Game" type="Node"]
 script = ExtResource("1_np2ea")
@@ -77,8 +75,8 @@ offset_bottom = 29.0
 grow_horizontal = 2
 grow_vertical = 2
 focus_mode = 0
-theme_override_fonts/font = SubResource("SystemFont_1x504")
-theme_override_font_sizes/font_size = 4
+theme_override_fonts/font = ExtResource("2_pl5xb")
+theme_override_font_sizes/font_size = 6
 text = "Show Paths"
 
 [node name="PaddlePathsDrawer" type="Node2D" parent="."]
