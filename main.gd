@@ -16,7 +16,7 @@ func _ready() -> void:
 	$HUD/Player2Score.position.x += 12
 
 
-func _process(delta: float) -> void:
+func _process(_delta: float) -> void:
 	if Input.is_action_just_released("exit"):
 		get_tree().quit()
 	
@@ -54,7 +54,7 @@ func scored(_winner: String):
 	game_state = "serve"
 
 
-func player_won(winner):
+func player_won(_winner):
 	game_state = "done"
 	$WinningSound.play()
 	$Ball.hide()

@@ -1,8 +1,10 @@
 res://default_bus_layout.tres
 res://main.tscn
-res://player1paddleH.gd
-res://hud.tscn
-res://player1paddleH.tscn
-res://player1paddleV.tscn
-res://player2paddleV.tscn
-res://player2paddleH.tscn
+res://Players/player1paddleH.tscn
+res://Players/player1paddleV.tscn
+res://Players/player2paddleH.tscn
+res://Players/player2paddleV.tscn
+res://Ball/ball.tscn
+res://HUD/hud.tscn
+res://HUD/hud.gd
+res://main.gd

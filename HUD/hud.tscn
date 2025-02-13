@@ -1,7 +1,8 @@
 [gd_scene load_steps=4 format=3 uid="uid://3x4s2gcogrvf"]
 
-[ext_resource type="Script" path="res://hud.gd" id="1_nqi1v"]
-[ext_resource type="FontFile" uid="uid://ja7wxn47gv8h" path="res://kongtext.ttf" id="2_bnnmp"]
+[ext_resource type="Script" path="res://HUD/hud.gd" id="1_nqi1v"]
+[ext_resource type="FontFile" uid="uid://ja7wxn47gv8h" path="res://Fonts/kongtext.ttf" id="2_bnnmp"]
+
 
 [sub_resource type="SystemFont" id="SystemFont_nmunj"]
 font_names = PackedStringArray("M42_FLIGHT 721")
